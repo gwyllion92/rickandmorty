@@ -1,0 +1,15 @@
+.vinculo{
+    background-color: rgb(205, 133, 63, 0.75);
+    color: #000000;
+    font-size:1.55rem;
+    padding-left: .65rem;
+    padding-right: .65rem;
+    padding-bottom: .1rem;
+    padding-top: .1rem;
+    border-radius: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: .5rem;
+    margin-right: .5rem;
+ 
+}

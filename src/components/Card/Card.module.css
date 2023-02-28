@@ -1,0 +1,18 @@
+.title{
+    color: rgb(55, 182, 182);
+}
+
+.container{
+    width: 18.75rem;
+    height: 18.75rem;
+    border: 1px solid #f1f1f1;
+    background-image: url('../../Images/cards-background.jpg');
+}
+
+.deleteBotton{
+    color: white;
+    background-color: red;
+    border-color: red;
+    margin-left: 92%;
+    margin-top: 1%;
+}
