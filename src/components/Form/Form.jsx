@@ -1,5 +1,6 @@
 import { useState } from "react"
 import validation from "./validation";
+import styles from './Form.module.css'
 
 const Form = ({ login }) => {
     const [userData, setUserData] = useState({ 
@@ -30,16 +31,19 @@ const Form = ({ login }) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username: </label>
+        <div>
+         <form className={styles.formContainer} onSubmit={handleSubmit}>
+            <label className={styles.labels} htmlFor="username">Username: </label>
             <input type="text" name="username" value={userData.username} onChange={handleInputChange} />
-            {errors.username && <p>{errors.username}</p>}
+            {errors.username && <p className={styles.formError}>{errors.username}</p>}
             
-            <label htmlFor="password">Password: </label>
+            <label className={styles.labels} htmlFor="password">Password: </label>
             <input type="password" name="password" value={userData.password} onChange={handleInputChange} />
-            {errors.password && <p>{errors.password}</p>}
-            <button>LOGIN</button>
-        </form>
+            {errors.password && <p className={styles.formError}>{errors.password}</p>}
+
+            <button className={styles.formBotton}>LOGIN</button>
+         </form>
+        </div>
     )
 }
 
