@@ -1,0 +1,18 @@
+h1{
+    color: rgb(57, 192, 192);
+}
+
+h2{
+    color: rgb(55, 182, 182);
+    font-size: 20px;
+
+}
+
+.container2{
+    width: 22rem;
+    height: 35.4rem;
+    border: 1px solid #f1f1f1;
+    background-image: url('../../Images/cards-background.jpg');
+    display:inline-block;
+    margin-top: 1%;
+}
