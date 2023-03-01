@@ -7,6 +7,7 @@ const Nav = ({onSearch}) => {
         <nav>
             <Link className={styles.vinculo} to='/about' >About</Link>
             <Link className={styles.vinculo} to='/home' >Home</Link>
+            <Link className={styles.vinculo} to='/' >Logout</Link>
             <br/>
             <SearchBar onSearch={onSearch}/>
         </nav>
