@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 import { useDispatch } from "react-redux"
 import { useState } from "react"
-import { addFavorite, deleteFavorite } from "../../redux/actions";
+import { addFavorite, deleteFav } from "../../redux/actions";
 
 function Card({ name, species, gender, image, onClose, id }) {
    const dispatch = useDispatch()
@@ -11,7 +11,7 @@ function Card({ name, species, gender, image, onClose, id }) {
    const handleFavorite = () => {
       if(isFav){
          setIsFav(false)
-         dispatch(deleteFavorite(id))
+         dispatch(deleteFav(id))
       }
       else{
          setIsFav(true)
